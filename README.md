@@ -4,7 +4,7 @@ My personal static website/portfolio to show case my projects.
 
 ### Links
 
-- Live : [Demo](https://qiuguportfolio-bcfculpop-qiugu.vercel.app/)
+- [Live](https://qiuguportfolio-bcfculpop-qiugu.vercel.app/)
 
 ### Screenshot
 
@@ -16,7 +16,7 @@ My personal static website/portfolio to show case my projects.
 - [React Bootstrap](https://react-bootstrap.netlify.app/)
 
 
-### Dev Instruction:
+### Dev Instruction
 - Install node js on your machine
 - Download or fork the repository
 - CD to root directory
@@ -25,5 +25,5 @@ My personal static website/portfolio to show case my projects.
 - Run on local: **npm start**
 - Deploy: **npm run deploy**
 
-### Author: 
+### Author
 [@Qiugu He](https://github.com/Qiugu-He)
