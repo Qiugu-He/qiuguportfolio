@@ -1,8 +1,8 @@
 # Portfolio
 
-My personal static website/portfolio to show case my projects.
+My personal static website/portfolio to show case my projects. The app is hosted by Vercel.
 
-### Links
+### Site Link:
 
 - [Live](https://qiuguportfolio-bcfculpop-qiugu.vercel.app/)
 

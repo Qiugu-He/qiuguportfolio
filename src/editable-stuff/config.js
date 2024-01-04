@@ -28,7 +28,7 @@ const about = {
   heading: "About Me",
   imageLink: require("../editable-stuff/me6.jpg"),
   imageSize: 375,
-  message: ["Hello! My name is Qiugu He. I’m a graduate of 2020 from the University of Manitoba with a degree in Computer Science. I'm passionated about full stack web application and database development. I love learning new software technologies and also interested in developing multi platform application.", "In my spare time, I like to studying, reading, swimming, playing basketball and also give back to community by volunntering local/campus events. In the future, I hope I can create something that shows people the beauty behind the screen."],
+  message: ["Hello! My name is Qiugu He. I’m a graduate of 2020 from the University of Manitoba with a degree in Computer Science. I'm passionated about full stack web application and database development. I love learning new software technologies and also interested in developing multi platform application.", "In my spare time, I like to studying, reading, swimming, playing basketball and also give back to community by volunntering local/campus events. In the future, I hope I can create something that is useful to the word."],
   resume: require("../editable-stuff/Qiugu_He_Software_Developer_Resume.pdf"),
 };
 

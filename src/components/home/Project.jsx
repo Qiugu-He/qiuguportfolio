@@ -15,13 +15,14 @@ const dummyProject = {
 };
 const API = "https://api.github.com";
 
+
+
 const Project = ({ heading, username, length, specfic }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
     dummyProject
   );
-
   const [projectsArray, setProjectsArray] = useState([]);
 
   const fetchRepos = useCallback(async () => {
@@ -43,7 +44,8 @@ const Project = ({ heading, username, length, specfic }) => {
       // setting projectArray
       // TODO: remove the duplication.
       setProjectsArray(repoList);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error(error.message);
     }
   }, [allReposAPI, length, specfic, specficReposAPI]);

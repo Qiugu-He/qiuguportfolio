@@ -13,9 +13,16 @@ const ProjectCard = ({ value }) => {
     languages_url,
     pushed_at,
   } = value;
+
+  // https://raw.githubusercontent.com/qiugu-he/Little-Lemon/master/src/assets/Sajal.png --- works
+  // Relocating all the screenshot image to public folder and name it as "Screenshoot"
+
+  const imgSrc = `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
+
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+      <Card.Img variant="top" src={imgSrc}/>
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
@@ -37,6 +44,7 @@ const ProjectCard = ({ value }) => {
   );
 };
 
+//CardButtons
 const CardButtons = ({ svn_url }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
@@ -53,9 +61,9 @@ const CardButtons = ({ svn_url }) => {
   );
 };
 
+//Languages
 const Language = ({ languages_url, repo_url }) => {
   const [data, setData] = useState([]);
-
   const handleRequest = useCallback(async () => {
     try {
       const response = await axios.get(languages_url);
@@ -93,13 +101,13 @@ const Language = ({ languages_url, repo_url }) => {
               {Math.trunc((data[language] / total_count) * 1000) / 10} %
             </span>
           </a>
-
         ))
         : "code yet to be deployed."}
     </div>
   );
 };
 
+//CardFooter
 const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   const [updated_at, setUpdated_at] = useState("0 mints");
 
