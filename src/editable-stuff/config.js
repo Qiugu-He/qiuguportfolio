@@ -38,8 +38,8 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "Qiugu-He", 
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["Blog", "Little-Lemon", "qiuguportfolio"],
 };
 
 //Leadership SECTION

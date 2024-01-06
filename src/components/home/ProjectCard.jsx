@@ -12,12 +12,15 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
+    homepage,
   } = value;
 
   // https://raw.githubusercontent.com/qiugu-he/Little-Lemon/master/src/assets/Sajal.png --- works
   // Relocating all the screenshot image to public folder and name it as "Screenshoot"
 
-  const imgSrc = `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
+  const imgSrc = (name === 'Blog')?
+              `https://raw.githubusercontent.com/qiugu-he/${name}/master/Screenshoot.png`:
+              `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
 
   return (
     <Col md={6}>
@@ -26,7 +29,7 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          {svn_url ? <CardButtons svn_url={svn_url} homepage={homepage} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -45,17 +48,17 @@ const ProjectCard = ({ value }) => {
 };
 
 //CardButtons
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ svn_url, homepage }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a>
       <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
         <i className="fab fa-github" /> Repo
+      </a>
+      <a
+        href={`${homepage}`}
+        className="btn btn-outline-secondary mx-2"
+      >
+        <i className="fab fa-jsfiddle" /> Link
       </a>
     </div>
   );
@@ -97,8 +100,8 @@ const Language = ({ languages_url, repo_url }) => {
             rel="noopener noreferrer"
           >
             <span className="badge bg-light text-dark">
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
+              {language}
+              
             </span>
           </a>
         ))
