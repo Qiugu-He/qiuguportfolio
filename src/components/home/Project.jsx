@@ -15,8 +15,6 @@ const dummyProject = {
 };
 const API = "https://api.github.com";
 
-
-
 const Project = ({ heading, username, length, specfic }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
@@ -42,7 +40,6 @@ const Project = ({ heading, username, length, specfic }) => {
         console.error(error.message);
       }
       // setting projectArray
-      // TODO: remove the duplication.
       setProjectsArray(repoList);
     } 
     catch (error) {

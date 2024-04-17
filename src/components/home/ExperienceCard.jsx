@@ -5,8 +5,8 @@ import {
 } from "react-bootstrap";
 
 const imageSize = {
-  width: '40%', 
-  height: '40%', 
+  width: '30%', 
+  height: '30%', 
 };
 
 const ExperienceCard = ({ data }) => {

@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "何秋谷 Qiugu",
   middleName: "",
   lastName: "He",
-  message: ["A experienced full-stack software developer.", "Bachelor's Degree in Computer Science from University of Manitoba. "],
+  message: ["A experienced full-stack web developer.", "Bachelor's Degree in Computer Science from University of Manitoba. "],
   icons: [
     {
       image: "fa-brands fa-github",
@@ -18,17 +18,21 @@ const mainBody = {
     {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/qiuguhe/",
-    }
+    },
+    {
+      image: "fa fa-envelope",
+      url: "mailto: Qiugu.He@outlook.com",
+    },
   ],
 };
 
 //ABOUT
 const about = {
   show: true,
-  heading: "About Me",
+  heading: "Who I am",
   imageLink: require("../editable-stuff/me6.jpg"),
   imageSize: 375,
-  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I kick started my professional career as a web developer in Canada. I'm passionated about full stack web application and database development.", "The rech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I also love joining communities, helping and mentoring new developers. When I'm not programming, I focus on my hobbies, which are: reading, playing basketball, and meeting people."],
+  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I kick started my professional career as a web developer in Canada. I'm passionated about full stack web application and database development.", "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I love joining communities, helping peers and mentoring new developers. When I'm not programming, I focus on my hobbies, which are: reading, playing basketball, and meeting people."],
   resume: require("../editable-stuff/Qiugu_He_Software_Developer_Resume.pdf"),
 };
 
@@ -36,10 +40,10 @@ const about = {
 // display specfic projects, add the repository names, i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Projects",
   gitHubUsername: "Qiugu-He", 
   reposLength: 0,
-  specificRepos: ["Blog", "Little-Lemon", "qiuguportfolio"],
+  specificRepos: ["TravelApp","Blog", "littlelemon", "ReactHome","qiuguportfolio"],
 };
 
 //Leadership SECTION
@@ -47,24 +51,23 @@ const leadership = {
   show: false,
   heading: "Leadership",
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+    "",
   images: [
     {
-      img: require("../editable-stuff/me6.jpg"),
-      label: "First slide label",
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      label: "",
+      paragraph: ""
     }
   ],
   imageSize: {
-    width:"615",
-    height:"450"
+    width:"",
+    height:""
   }
 };
 
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Skills / Knowledges",
   hardSkills: [
     { name: "Java", value: 75 },
     { name: "C++/C#", value: 65 },
@@ -109,7 +112,7 @@ const skills = {
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: true,
-  heading: "Get In Touch",
+  heading: "Let's Get In Touch",
   message:
     "I'm currently looking for full-time Software Engineering role! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
   email: "Qiugu.He@outlook.com",
@@ -125,12 +128,13 @@ const getInTouch = {
   ]
 };
 
+//EXPERIENCE SECTION
 const experiences = {
   show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Developer',
+      role: 'Software Developer II',
       companylogo: require('../assets/img/MPI.webp'),
       date: 'Jan 2021 - Present',
     }

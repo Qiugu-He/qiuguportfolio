@@ -5,7 +5,7 @@ const GetInTouch = ({ heading, message, email, icons }) => {
     <>
       <h2 className="display-4 text-center">{heading}</h2>
       <p className="lead text-center">
-        {message}, <a className="text-decoration-none" href={`mailto:${email}`}>{email}</a>.
+        {message} <a className="text-decoration-none" href={`mailto:${email}`}>{email}</a>.
       </p>
       <div className="pb-3">
             {icons.map((icon, index) => (

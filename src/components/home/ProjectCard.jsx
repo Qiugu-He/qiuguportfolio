@@ -17,25 +17,25 @@ const ProjectCard = ({ value }) => {
 
   // https://raw.githubusercontent.com/qiugu-he/Little-Lemon/master/src/assets/Sajal.png --- works
   // Relocating all the screenshot image to public folder and name it as "Screenshoot"
+  const imgSrc = (name === 'Blog')? `https://raw.githubusercontent.com/qiugu-he/${name}/master/Screenshot.png`: (name === 'littlelemon')? `https://raw.githubusercontent.com/qiugu-he/${name}/main/public/Screenshot.png`: `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
+  const title = (name === 'Blog') ? 'Blogging Platform' : (name === 'TravelApp') ? 'iTravel' : (name === 'littlelemon') ? 'Little Lemon' : name;
 
-  const imgSrc = (name === 'Blog')?
-              `https://raw.githubusercontent.com/qiugu-he/${name}/master/Screenshoot.png`:
-              `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
 
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
       <Card.Img variant="top" src={imgSrc}/>
         <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
+          <Card.Title as="h5">{title || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} homepage={homepage} /> : <Skeleton count={2} />}
           <hr />
-          {languages_url ? (
+          <TechStack title={title}/>
+          {/* {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
             <Skeleton count={3} />
-          )}
+          )} */}
           {value ? (
             <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
           ) : (
@@ -47,18 +47,54 @@ const ProjectCard = ({ value }) => {
   );
 };
 
+//tech
+const TechStack = ({title}) =>{
+  var arr = [];
+  switch (title){
+    case "Blogging Platform":
+      arr=["Reactjs", "React-router", "Node-js", "Expressjs", "Express-middleware", "MongoDB", "Jest", "Digital Ocean", "Figma", "Docker", "Nginx"];
+      break;
+    case "Little Lemon":
+      arr=["Typescript", "React.js", "React-components", "React-hooks", "React-hoc", "React-router", "Jest", "Figma"];
+      break;
+    case "qiuguportfolio":
+      arr=["React.js", "React-router","React-hooks", "Custom-hooks", "HOC","Jest"];
+      break;
+    case "ReactHome":
+      arr=["React.js", "React-router","React-hooks", "Jest"];
+      break;
+    case "iTravel":
+        arr=["Typescript", "React.js", "Ant Design4", "React-components", "React-hooks", "React-hoc", "React-router","Redux-toolkit", "Redux-store","Redux-thunk", "Figma", "Docker", "Docker image", "Nginx", "Aliyun"];
+        break;
+    default:
+      break;
+  }
+
+  return (
+    <div className="pb-3">
+      Tags: {" "}
+      {arr.map((t) => (
+        <span className="badge bg-light text-dark">
+          {t}
+        </span>
+        ))}
+    </div>
+  );
+}
+
 //CardButtons
 const CardButtons = ({ svn_url, homepage }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
       <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
+         <i className="fab fa-github" /> Github
       </a>
       <a
         href={`${homepage}`}
         className="btn btn-outline-secondary mx-2"
       >
-        <i className="fab fa-jsfiddle" /> Link
+        {/* <i className="fab fa-jsfiddle" /> Live */}
+        Live
       </a>
     </div>
   );
@@ -92,18 +128,9 @@ const Language = ({ languages_url, repo_url }) => {
       Languages:{" "}
       {array.length
         ? array.map((language) => (
-          <a
-            key={language}
-            className="card-link"
-            href={repo_url + `/search?l=${language}`}
-            target=" _blank"
-            rel="noopener noreferrer"
-          >
             <span className="badge bg-light text-dark">
               {language}
-              
             </span>
-          </a>
         ))
         : "code yet to be deployed."}
     </div>
@@ -137,7 +164,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
 
   return (
     <p className="card-text">
-      <a
+      {/* <a
         href={repo_url + "/stargazers"}
         target=" _blank"
         className="text-dark text-decoration-none"
@@ -146,7 +173,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
           <i className="fab fa-github" /> Stars{" "}
           <span className="badge badge-dark">{star_count}</span>
         </span>
-      </a>
+      </a> */}
       <small className="text-muted">Updated {updated_at}</small>
     </p>
   );
