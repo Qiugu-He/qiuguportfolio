@@ -32,7 +32,7 @@ const about = {
   heading: "Who I am",
   imageLink: require("../editable-stuff/me6.jpg"),
   imageSize: 375,
-  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I kick started my professional career as a web developer in Canada. I'm passionated about full stack web application and database development.", "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I love joining communities, helping peers and mentoring new developers. When I'm not programming, I focus on my hobbies, which are: reading, playing basketball, and meeting people."],
+  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I began my professional career as a software developer in Canada, and I have since then amassed three years of robust experience in full-stack development using JavaScript. Embracing the dynamic natural of tech industry, I am dedicated to continues growth, consistently strengthening my foundational skills and enhance my credentials as a software enginner."],
   resume: require("../editable-stuff/Qiugu_He_Software_Developer_Resume.pdf"),
 };
 
