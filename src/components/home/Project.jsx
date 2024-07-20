@@ -54,7 +54,7 @@ const Project = ({ heading, username, length, specfic }) => {
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
-        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <h2 className="display-5 pb-5 text-center">{heading}</h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (

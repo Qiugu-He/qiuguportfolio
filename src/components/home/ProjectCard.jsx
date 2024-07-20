@@ -20,7 +20,6 @@ const ProjectCard = ({ value }) => {
   const imgSrc = (name === 'Blog')? `https://raw.githubusercontent.com/qiugu-he/${name}/master/Screenshot.png`: (name === 'littlelemon')? `https://raw.githubusercontent.com/qiugu-he/${name}/main/public/Screenshot.png`: `https://raw.githubusercontent.com/qiugu-he/${name}/master/public/Screenshoot.png`;
   const title = (name === 'Blog') ? 'Blogging Platform' : (name === 'TravelApp') ? 'iTravel' : (name === 'littlelemon') ? 'Little Lemon' : name;
 
-
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">

@@ -18,8 +18,9 @@ const ExperienceCard = ({ data }) => {
           {data.role}
           <br />
           {data.date}
+          <br />
         </p>
-
+        <p className="font-italic text-muted">{data.skill}</p>
       </div>
     </Col>
   );

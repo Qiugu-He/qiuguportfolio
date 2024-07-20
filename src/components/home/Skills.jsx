@@ -23,61 +23,61 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills, skillA, skil
   return (
     <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
       <Container className="p-5 ">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
+        <h2 ref={skillsTabRef} className="display-5 pb-5 text-center">
           {heading}
         </h2>
-
-        <Table borderless variant="grey">
+        
+        <Table borderless variant="grey" className="font-italic text-muted ">
           <thead>
             <tr>
-              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)'}}>Languages</th>
-              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)'}}>Frameworks/Database</th>
-              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)'}}>Services/Tools</th>
-              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)'}}>Concepts</th>
+              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)', fontSize: '20px'}}> Programming Languages</th>
+              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)', fontSize: '20px'}}>Frameworks/Database</th>
+              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)', fontSize: '20px'}}>Services/Tools</th>
+              <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)', fontSize: '20px'}}>Concepts</th>
               {/* <th style={{ textAlign: 'center', fontWeight: 'normal', color: 'rgb(37, 117, 245)'}}>Soft Skills</th> */}
             </tr>
           </thead>
       <tbody>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px'}}>JavaScript/TypeScript</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>ReactJS</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Amazon Web Services</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>RESTful Web Services</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px'}}>JavaScript/TypeScript</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>ReactJS</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Amazon Web Services</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>RESTful Web Services</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Goal Oriented</td> */}
         </tr>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Java</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Node/ExpressJS</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>CI/CD</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Object Oriented Programming</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Java</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Node/ExpressJS</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>CI/CD</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Object Oriented Programming</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Collabration</td> */}
         </tr>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>C#/C++</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>ASP.NET</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Docker</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Agile Methodology</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>C#/C++</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>ASP.NET</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Docker</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Agile Methodology</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Problem Solving</td> */}
         </tr>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Python</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>MySQL</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>PostMan</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Data Structure & Algorithms</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Python</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>MySQL</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>PostMan</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Data Structure & Algorithms</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Positivity</td> */}
         </tr>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>SQL</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>PostgreySQL</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Jenkins</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Functional Programming</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>SQL</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>PostgreySQL</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Jenkins</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Functional Programming</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Adaptability</td> */}
         </tr>
         <tr>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>HTML/CSS</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>MongoDB</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Git/GitHub</td>
-          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Software Design Principles</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>HTML/CSS</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>MongoDB</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Git/GitHub</td>
+          <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '18px' }}>Software Design Principles</td>
           {/* <td style={{ textAlign: 'center', fontFamily: 'Helvetica Neue', fontSize: '20px' }}>Creativity</td> */}
         </tr>
       </tbody>

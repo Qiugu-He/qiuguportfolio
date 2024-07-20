@@ -32,7 +32,7 @@ const about = {
   heading: "Who I am",
   imageLink: require("../editable-stuff/me6.jpg"),
   imageSize: 375,
-  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I began my professional career as a software developer in Canada, and I have since then amassed three years of robust experience in full-stack development using JavaScript. Embracing the dynamic natural of tech industry, I am dedicated to continues growth, consistently strengthening my foundational skills and enhance my credentials as a software enginner."],
+  message: ["I graduated from the University of Manitoba in 2020 with a degree in Computer Science. I began my professional career as a software developer in Canada, and I have since then amassed three years of robust experience in full-stack development using JavaScript, Java and C#. Embracing the dynamic natural of tech industry, I am dedicated to continues growth, consistently strengthening my foundational skills and enhance my credentials as a software enginner."],
   resume: require("../editable-stuff/Qiugu_He_Software_Developer_Resume.pdf"),
 };
 
@@ -40,10 +40,10 @@ const about = {
 // display specfic projects, add the repository names, i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Projects",
+  heading: "Side Projects",
   gitHubUsername: "Qiugu-He", 
   reposLength: 0,
-  specificRepos: ["TravelApp","Blog", "littlelemon", "ReactHome","qiuguportfolio"],
+  specificRepos: ["TravelApp","Blog", "littlelemon", "ReactHome"],
 };
 
 //Leadership SECTION
@@ -67,7 +67,7 @@ const leadership = {
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills / Knowledges",
+  heading: "Skill Sets",
   hardSkills: [
     { name: "Java", value: 75 },
     { name: "C++/C#", value: 65 },
@@ -131,12 +131,13 @@ const getInTouch = {
 //EXPERIENCE SECTION
 const experiences = {
   show: true,
-  heading: "Experiences",
+  heading: " Professional Experiences",
   data: [
     {
       role: 'Software Developer II',
       companylogo: require('../assets/img/MPI.webp'),
       date: 'Jan 2021 - Present',
+      skill: 'JavaScript, React, NodeJs, C#, REST APIs, Azure DevOps, Agile Methodologies, Scrum'
     }
   ]
 }

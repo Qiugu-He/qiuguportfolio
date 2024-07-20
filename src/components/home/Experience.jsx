@@ -11,7 +11,7 @@ const Experience = ({ experiences }) => {
     <section id="experiences" className="section">
       <Container>
         <Jumbotron className="bg-white">
-          <h2 className="display-4 mb-5 text-center">
+          <h2 className="display-5 mb-5 text-center">
             {experiences.heading}
           </h2>
           <Row>
